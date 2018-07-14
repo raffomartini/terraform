@@ -1,5 +1,7 @@
 # terraform
 ```
+gcloud services enable serviceusage.googleapis.com 
+gcloud auth application-default login
 export TF_VAR_project_name=<NEW_PROJECT_NAME>
 export PROJECT=$(gcloud config get-value project)
 export OAUTH_TOKEN=$(gcloud auth application-default print-access-token)
